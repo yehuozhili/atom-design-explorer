@@ -1,3 +1,4 @@
+const path = require("path");
 module.exports = {
 	stories: ["../src/**/*.stories.(tsx|mdx)"],
 	addons: [
@@ -16,6 +17,17 @@ module.exports = {
 			use: [
 				{
 					loader: require.resolve("react-docgen-typescript-loader"),
+					options: {
+						shouldExtractLiteralValuesFromEnum: true,
+						propFilter: (prop) => {
+							if (prop.parent) {
+								return !prop.parent.fileName.includes(
+									"node_modules"
+								);
+							}
+							return true;
+						},
+					},
 				},
 			],
 		});
