@@ -26,7 +26,7 @@ export const knobsBtn = () => (
 			isLink={boolean("isLink", false)}
 			loadingText={text("loadingTEXT", "I AM LOADING")}
 			isLoading={boolean("isLoading", false)}
-			isDisabled={boolean("isDisabled", false)}
+			disabled={boolean("disabled", false)}
 			appearance={select<AppearancesTypes>(
 				"APPEARANCES",
 				APPEARANCES,
@@ -89,16 +89,16 @@ export const loading = () => (
 
 export const disabled = () => (
 	<>
-		<Button appearance="primary" isDisabled>
+		<Button appearance="primary" disabled>
 			Primary
 		</Button>
-		<Button appearance="secondary" isDisabled>
+		<Button appearance="secondary" disabled>
 			Secondary
 		</Button>
-		<Button appearance="tertiary" isDisabled>
+		<Button appearance="tertiary" disabled>
 			Tertiary
 		</Button>
-		<Button appearance="outline" isDisabled>
+		<Button appearance="outline" disabled>
 			Outline
 		</Button>
 	</>

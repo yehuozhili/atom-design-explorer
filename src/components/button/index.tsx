@@ -120,7 +120,7 @@ const StyledButton = styled.button<ButtonProps>`
   }
 
   ${(props) =>
-		props.isDisabled &&
+		props.disabled &&
 		`
       cursor: not-allowed !important;
       opacity: 0.5;
@@ -402,7 +402,7 @@ const StyledButton = styled.button<ButtonProps>`
 
 export interface CustormButtonProps {
 	/** 是否禁用 */
-	isDisabled?: boolean;
+	disabled?: boolean;
 	/** 是否加载中 */
 	isLoading?: boolean;
 	/** 是否是a标签 */
@@ -436,7 +436,7 @@ function Button(props: PropsWithChildren<ButtonProps>) {
 	}, [isLink]);
 
 	return (
-		<StyledButton as={btnType} {...props}>
+		<StyledButton as={btnType} data-testid={"button"} {...props}>
 			{buttonInner}
 		</StyledButton>
 	);
@@ -447,7 +447,7 @@ Button.defaultProps = {
 	loadingText: null,
 	isLink: false,
 	appearance: APPEARANCES.tertiary,
-	isDisabled: false,
+	disabled: false,
 	isUnclickable: false,
 	containsIcon: false,
 	size: SIZES.medium,
