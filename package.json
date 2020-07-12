@@ -1,6 +1,6 @@
 {
 	"name": "atom-design-explorer",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"private": false,
 	"dependencies": {
 		"polished": "^3.6.5"
@@ -13,6 +13,9 @@
 	"files": [
 		"dist"
 	],
+	"module": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"sideEffects": false,
 	"scripts": {
 		"start": "react-scripts start",
 		"build": "tsc -p tsconfig.build.json",

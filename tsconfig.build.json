@@ -7,14 +7,11 @@
 		"jsx": "react",
 		"moduleResolution": "node",
 		"allowSyntheticDefaultImports": true,
-		"allowJs": true,
 		"skipLibCheck": true,
 		"esModuleInterop": true,
 		"strict": true,
 		"forceConsistentCasingInFileNames": true,
-		"resolveJsonModule": true,
-		"isolatedModules": true,
-		"noEmit": true
+		"resolveJsonModule": true
 	},
 	"include": ["src"],
 	"exclude": ["src/**/*.stories.tsx", "src/**/*.test.tsx"]
