@@ -25,6 +25,7 @@
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
 		"coverage": "react-scripts test --coverage --watchAll=false",
+		"coverall": "npm run coverage  && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
 		"storybook": "start-storybook -p 9009 -s public",
 		"build-storybook": "build-storybook --no-dll --quiet"
 	},
@@ -54,8 +55,6 @@
 		"@storybook/addons": "^5.3.19",
 		"@storybook/preset-create-react-app": "^2.1.1",
 		"@storybook/react": "^5.3.19",
-		"@types/styled-components": "^5.1.1",
-		"react-docgen-typescript-loader": "^3.7.2",
 		"@testing-library/jest-dom": "^4.2.4",
 		"@testing-library/react": "^9.5.0",
 		"@testing-library/user-event": "^7.1.2",
@@ -63,11 +62,14 @@
 		"@types/node": "^12.0.0",
 		"@types/react": "^16.9.0",
 		"@types/react-dom": "^16.9.0",
-		"react-scripts": "3.4.1",
-		"typescript": "~3.7.2",
+		"@types/styled-components": "^5.1.1",
+		"coveralls": "^3.1.0",
 		"react": ">=16.8.0",
+		"react-docgen-typescript-loader": "^3.7.2",
 		"react-dom": ">=16.8.0",
-		"styled-components": "^5.1.1"
+		"react-scripts": "3.4.1",
+		"styled-components": "^5.1.1",
+		"typescript": "~3.7.2"
 	},
 	"jest": {
 		"collectCoverageFrom": [
