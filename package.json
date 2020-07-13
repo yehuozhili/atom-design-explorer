@@ -26,7 +26,7 @@
 		"eject": "react-scripts eject",
 		"coverage": "react-scripts test --coverage --watchAll=false",
 		"storybook": "start-storybook -p 9009 -s public",
-		"build-storybook": "build-storybook -s public"
+		"build-storybook": "build-storybook --no-dll --quiet"
 	},
 	"eslintConfig": {
 		"extends": "react-app"
