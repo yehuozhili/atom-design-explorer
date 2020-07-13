@@ -62,6 +62,11 @@ const Loading = styled.span`
 	opacity: 0;
 `;
 
+export const btnPadding = {
+	small: "8px 16px",
+	medium: "13px 20px",
+};
+
 const StyledButton = styled.button<ButtonProps>`
   border: 0;
   border-radius: 3em;
@@ -69,7 +74,7 @@ const StyledButton = styled.button<ButtonProps>`
   display: inline-block;
   overflow: hidden;
   padding: ${(props) =>
-		props.size === SIZES.small ? "8px 16px" : "13px 20px"};
+		props.size === SIZES.small ? btnPadding.small : btnPadding.medium};
   position: relative;
   text-align: center;
   text-decoration: none;
