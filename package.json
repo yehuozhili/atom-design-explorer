@@ -25,7 +25,6 @@
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
 		"coverage": "react-scripts test --coverage --watchAll=false",
-		"coverall": "npm run coverage  && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
 		"storybook": "start-storybook -p 9009 -s public",
 		"build-storybook": "build-storybook --no-dll --quiet"
 	},
