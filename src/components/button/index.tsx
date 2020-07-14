@@ -174,7 +174,8 @@ const StyledButton = styled.button<ButtonProps>`
       background: ${color.primary};
       color: ${color.lightest};
 
-      ${!props.isLoading &&
+      ${
+			!props.isLoading &&
 			`
           &:hover {
             background: ${darken(0.05, color.primary)};
@@ -188,7 +189,8 @@ const StyledButton = styled.button<ButtonProps>`
           &:focus:hover {
             box-shadow: ${rgba(color.primary, 0.2)} 0 8px 18px 0px;
           }
-        `}
+        `
+		}
     `}
 
   ${(props) =>
@@ -197,7 +199,8 @@ const StyledButton = styled.button<ButtonProps>`
       background: ${color.secondary};
       color: ${color.lightest};
 
-      ${!props.isLoading &&
+      ${
+			!props.isLoading &&
 			`
           &:hover {
             background: ${darken(0.05, color.secondary)};
@@ -211,7 +214,8 @@ const StyledButton = styled.button<ButtonProps>`
           &:focus:hover {
             box-shadow: ${rgba(color.secondary, 0.2)} 0 8px 18px 0px;
           }
-        `}
+        `
+		}
     `}
 
   ${(props) =>
@@ -220,7 +224,8 @@ const StyledButton = styled.button<ButtonProps>`
       background: ${color.tertiary};
       color: ${color.darkest};
 
-      ${!props.isLoading &&
+      ${
+			!props.isLoading &&
 			`
           &:hover {
             background: ${darken(0.05, color.tertiary)};
@@ -234,7 +239,8 @@ const StyledButton = styled.button<ButtonProps>`
           &:focus:hover {
             box-shadow: ${rgba(color.darkest, 0.05)} 0 8px 18px 0px;
           }
-        `}
+        `
+		}
     `}
 
   ${(props) =>
@@ -244,7 +250,8 @@ const StyledButton = styled.button<ButtonProps>`
       color: ${color.dark};
       background: transparent;
 
-      ${!props.isLoading &&
+      ${
+			!props.isLoading &&
 			`
           &:hover {
             box-shadow: ${opacify(0.3, color.border)} 0 0 0 1px inset;
@@ -272,7 +279,8 @@ const StyledButton = styled.button<ButtonProps>`
             box-shadow: ${opacify(0.05, color.border)} 0 0 0 1px inset, 
             ${rgba(color.darkest, 0.05)} 0 8px 18px 0px;
           }
-        `};
+        `
+		};
     `};
 
     ${(props) =>
@@ -337,7 +345,8 @@ const StyledButton = styled.button<ButtonProps>`
           background: ${color.lightest};
           color: ${color.primary};
 
-          ${!props.isLoading &&
+          ${
+				!props.isLoading &&
 				`
               &:hover {
                 background: ${color.lightest};
@@ -351,7 +360,8 @@ const StyledButton = styled.button<ButtonProps>`
               &:focus:hover {
                 box-shadow: ${rgba(color.primary, 0.2)} 0 8px 18px 0px;
               }
-          `}
+          `
+			}
       `}
 
       ${(props) =>
@@ -360,7 +370,8 @@ const StyledButton = styled.button<ButtonProps>`
           background: ${color.lightest};
           color: ${color.secondary};
 
-          ${!props.isLoading &&
+          ${
+				!props.isLoading &&
 				`
               &:hover {
                 background: ${color.lightest};
@@ -374,7 +385,8 @@ const StyledButton = styled.button<ButtonProps>`
               &:focus:hover {
                 box-shadow: ${rgba(color.secondary, 0.2)} 0 8px 18px 0px;
               }
-          `}
+          `
+			}
       `}
 
       ${(props) =>

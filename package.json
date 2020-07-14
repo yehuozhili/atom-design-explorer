@@ -22,13 +22,15 @@
 	"scripts": {
 		"start": "react-scripts start",
 		"build": "tsc -p tsconfig.build.json",
-		"test": "react-scripts test",
+		"test": "react-scripts test --watchAll=false",
+		"test:watch": "react-scripts test ",
 		"eject": "react-scripts eject",
 		"coverage": "react-scripts test --coverage --watchAll=false",
 		"coverall": "npm run coverage  && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
 		"storybook": "start-storybook -p 9009 -s public",
 		"build-storybook": "build-storybook --no-dll --quiet",
-		"test-who": "npm whoami"
+		"test-who": "npm whoami",
+		"pub": "npm run test:watch & np"
 	},
 	"eslintConfig": {
 		"extends": "react-app"
@@ -78,5 +80,8 @@
 			"src/**/*.tsx",
 			"!src/**/*.snap"
 		]
+	},
+	"np": {
+		"yolo": true
 	}
 }
