@@ -1,6 +1,6 @@
 {
 	"name": "@yehuozhili/atom-design-explorer",
-	"version": "0.1.6",
+	"version": "0.1.7",
 	"private": false,
 	"dependencies": {
 		"polished": "^3.6.5"
