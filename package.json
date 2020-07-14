@@ -30,7 +30,7 @@
 		"storybook": "start-storybook -p 9009 -s public",
 		"build-storybook": "build-storybook --no-dll --quiet",
 		"test-who": "npm whoami",
-		"pub": "npm run test:watch & np"
+		"pub": "npm run test & np"
 	},
 	"eslintConfig": {
 		"extends": "react-app"
