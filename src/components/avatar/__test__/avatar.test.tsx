@@ -1,11 +1,11 @@
 import React from "react";
 import { render, fireEvent, cleanup } from "@testing-library/react";
-import { {{headCaps name}} } from "../index";
+import { Avatar } from "../index";
 import { color, typography } from "../../shared/styles";
 
 
 
 
-describe("test {{headCaps name}} component", () => {
+describe("", () => {
     it(" ", () => {})
 })
