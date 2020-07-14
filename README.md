@@ -13,3 +13,7 @@
 https://yehuozhili.github.io/atom-design-explorer/
 
 如果 storybook 显示异常请清空 localstorage 内容重新刷新。
+
+## 中心思想
+
+使用 styled-components 将所有可配置组件原子化，使得样式调整或者二次开发更便捷。
