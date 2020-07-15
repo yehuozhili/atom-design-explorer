@@ -11,16 +11,14 @@ export default {
 };
 
 export const knobsIcon = () => (
-	<div style={{ background: color("background", "#FFFFFF") }}>
-		<Icon
-			icon={select<IconProps["icon"]>(
-				"icons",
-				Object.keys(icons) as IconProps["icon"][],
-				"bookmark"
-			)}
-			color={color("color", "black")}
-		></Icon>
-	</div>
+	<Icon
+		icon={select<IconProps["icon"]>(
+			"icons",
+			Object.keys(icons) as IconProps["icon"][],
+			"bookmark"
+		)}
+		color={color("color", "black")}
+	></Icon>
 );
 
 const Meta = styled.div`

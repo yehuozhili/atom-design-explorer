@@ -10,6 +10,7 @@ module.exports = {
 		{ name: "@storybook/addon-docs", options: { configureJSX: true } },
 		"@storybook/addon-a11y",
 		"@storybook/addon-storysource",
+		"@storybook/addon-backgrounds",
 	],
 	webpackFinal: async (config) => {
 		config.module.rules.push({

@@ -18,6 +18,7 @@ describe(" test Icon component", () => {
 	});
 	it("it should render  block ", () => {
 		const wrapper = render(<Icon icon="mobile" block></Icon>);
+		expect(wrapper).toMatchSnapshot();
 		const svg = wrapper.getByTestId("icon-svg");
 		expect(svg).toHaveStyle("display:block");
 	});
@@ -27,6 +28,7 @@ describe(" test Icon component", () => {
 		expect(path).toHaveAttribute("color", "black");
 		cleanup();
 		wrapper = render(<Icon icon="mobile" color="blue"></Icon>);
+		expect(wrapper).toMatchSnapshot();
 		path = wrapper.queryByTestId("icon-path");
 		expect(path).toHaveAttribute("color", "blue");
 	});

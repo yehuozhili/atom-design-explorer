@@ -5,13 +5,7 @@ import Button, {
 	SIZES,
 	SizesTypes,
 } from "./index";
-import {
-	withKnobs,
-	text,
-	boolean,
-	color,
-	select,
-} from "@storybook/addon-knobs";
+import { withKnobs, text, boolean, select } from "@storybook/addon-knobs";
 export default {
 	title: "Button",
 	component: Button,
@@ -19,23 +13,21 @@ export default {
 };
 
 export const knobsBtn = () => (
-	<div style={{ background: color("background", "#FFFFFF") }}>
-		<Button
-			size={select<SizesTypes>("size", SIZES, SIZES.medium)}
-			href={text("hrefText", "")}
-			isLink={boolean("isLink", false)}
-			loadingText={text("loadingTEXT", "I AM LOADING")}
-			isLoading={boolean("isLoading", false)}
-			disabled={boolean("disabled", false)}
-			appearance={select<AppearancesTypes>(
-				"APPEARANCES",
-				APPEARANCES,
-				APPEARANCES.primary
-			)}
-		>
-			{text("childrenText", "Hello Storybook")}
-		</Button>
-	</div>
+	<Button
+		size={select<SizesTypes>("size", SIZES, SIZES.medium)}
+		href={text("hrefText", "")}
+		isLink={boolean("isLink", false)}
+		loadingText={text("loadingTEXT", "I AM LOADING")}
+		isLoading={boolean("isLoading", false)}
+		disabled={boolean("disabled", false)}
+		appearance={select<AppearancesTypes>(
+			"APPEARANCES",
+			APPEARANCES,
+			APPEARANCES.primary
+		)}
+	>
+		{text("childrenText", "Hello Storybook")}
+	</Button>
 );
 
 export const buttons = () => (
