@@ -13,7 +13,8 @@
 	"files": [
 		"dist"
 	],
-	"module": "dist/index.js",
+	"main": "dist/atom-design-explorer.js",
+	"module": "dist/atom-design-explorer.modern.js",
 	"types": "dist/index.d.ts",
 	"sideEffects": false,
 	"publishConfig": {
@@ -22,7 +23,7 @@
 	},
 	"scripts": {
 		"start": "react-scripts start",
-		"build": "tsc -p tsconfig.build.json",
+		"build": "npm run build-all & npm run build-cjs",
 		"test": "react-scripts test --watchAll=false",
 		"test:watch": "react-scripts test ",
 		"eject": "react-scripts eject",
@@ -31,7 +32,9 @@
 		"storybook": "start-storybook -p 9009 -s public",
 		"build-storybook": "build-storybook --no-dll --quiet",
 		"test-who": "npm whoami",
-		"pub": "npm run test & np"
+		"pub": "npm run test & np",
+		"build-cjs": "microbundle build --tsconfig tsconfig.build.json --jsx React.createElement  --compress=false --format cjs",
+		"build-all": "microbundle build --tsconfig tsconfig.build.json --jsx React.createElement  --compress=false"
 	},
 	"eslintConfig": {
 		"extends": "react-app"
@@ -69,6 +72,7 @@
 		"@types/react-dom": "^16.9.0",
 		"@types/styled-components": "^5.1.1",
 		"coveralls": "^3.1.0",
+		"microbundle": "^0.12.3",
 		"plop": "^2.7.1",
 		"react": ">=16.8.0",
 		"react-docgen-typescript-loader": "^3.7.2",
