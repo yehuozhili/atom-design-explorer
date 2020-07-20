@@ -1,4 +1,4 @@
-import React, { useMemo } from "react";
+import React, { useMemo, HTMLAttributes } from "react";
 import styled, { css } from "styled-components";
 import { color, typography } from "../shared/styles";
 import { glow } from "../shared/animation";
@@ -102,7 +102,7 @@ const Initial = styled.div<AvatarProps>`
 		`}
 `;
 
-export type AvatarProps = {
+export interface AvatarProps extends HTMLAttributes<HTMLDivElement> {
 	/** 是否加载中*/
 	isLoading?: boolean;
 	/** 用户名*/
@@ -111,7 +111,7 @@ export type AvatarProps = {
 	src?: null | string;
 	/** 头像大小 */
 	size?: keyof typeof AvatarSize;
-};
+}
 interface a11yProps {
 	[key: string]: boolean | string;
 }
