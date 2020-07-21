@@ -1,226 +1,54 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`test Avatar component it should render correct size 1`] = `
+exports[`test Radio component should checked when clicked 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="sc-AxiKw eoTmok"
-        data-testid="avatar-div"
+        class="sc-AxhCb eXdbPg"
       >
-        <div
-          aria-hidden="true"
-          class="sc-AxhCb kPMWaf"
-          data-testid="avatar-username"
+        <label
+          class="sc-AxjAm gqYqNm"
         >
-          l
-        </div>
-      </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      class="sc-AxiKw eoTmok"
-      data-testid="avatar-div"
-    >
-      <div
-        aria-hidden="true"
-        class="sc-AxhCb kPMWaf"
-        data-testid="avatar-username"
-      >
-        l
-      </div>
-    </div>
-  </div>,
-  "debug": [Function],
-  "findAllByAltText": [Function],
-  "findAllByDisplayValue": [Function],
-  "findAllByLabelText": [Function],
-  "findAllByPlaceholderText": [Function],
-  "findAllByRole": [Function],
-  "findAllByTestId": [Function],
-  "findAllByText": [Function],
-  "findAllByTitle": [Function],
-  "findByAltText": [Function],
-  "findByDisplayValue": [Function],
-  "findByLabelText": [Function],
-  "findByPlaceholderText": [Function],
-  "findByRole": [Function],
-  "findByTestId": [Function],
-  "findByText": [Function],
-  "findByTitle": [Function],
-  "getAllByAltText": [Function],
-  "getAllByDisplayValue": [Function],
-  "getAllByLabelText": [Function],
-  "getAllByPlaceholderText": [Function],
-  "getAllByRole": [Function],
-  "getAllByTestId": [Function],
-  "getAllByText": [Function],
-  "getAllByTitle": [Function],
-  "getByAltText": [Function],
-  "getByDisplayValue": [Function],
-  "getByLabelText": [Function],
-  "getByPlaceholderText": [Function],
-  "getByRole": [Function],
-  "getByTestId": [Function],
-  "getByText": [Function],
-  "getByTitle": [Function],
-  "queryAllByAltText": [Function],
-  "queryAllByDisplayValue": [Function],
-  "queryAllByLabelText": [Function],
-  "queryAllByPlaceholderText": [Function],
-  "queryAllByRole": [Function],
-  "queryAllByTestId": [Function],
-  "queryAllByText": [Function],
-  "queryAllByTitle": [Function],
-  "queryByAltText": [Function],
-  "queryByDisplayValue": [Function],
-  "queryByLabelText": [Function],
-  "queryByPlaceholderText": [Function],
-  "queryByRole": [Function],
-  "queryByTestId": [Function],
-  "queryByText": [Function],
-  "queryByTitle": [Function],
-  "rerender": [Function],
-  "unmount": [Function],
-}
-`;
-
-exports[`test Avatar component it should render default avatar 1`] = `
-Object {
-  "asFragment": [Function],
-  "baseElement": <body>
-    <div>
-      <div
-        class="sc-AxiKw dIhqXp"
-        data-testid="avatar-div"
-      >
-        <div
-          aria-hidden="true"
-          class="sc-AxhCb jWsrSR"
-          data-testid="avatar-username"
-        >
-          l
-        </div>
-      </div>
-    </div>
-  </body>,
-  "container": <div>
-    <div
-      class="sc-AxiKw dIhqXp"
-      data-testid="avatar-div"
-    >
-      <div
-        aria-hidden="true"
-        class="sc-AxhCb jWsrSR"
-        data-testid="avatar-username"
-      >
-        l
-      </div>
-    </div>
-  </div>,
-  "debug": [Function],
-  "findAllByAltText": [Function],
-  "findAllByDisplayValue": [Function],
-  "findAllByLabelText": [Function],
-  "findAllByPlaceholderText": [Function],
-  "findAllByRole": [Function],
-  "findAllByTestId": [Function],
-  "findAllByText": [Function],
-  "findAllByTitle": [Function],
-  "findByAltText": [Function],
-  "findByDisplayValue": [Function],
-  "findByLabelText": [Function],
-  "findByPlaceholderText": [Function],
-  "findByRole": [Function],
-  "findByTestId": [Function],
-  "findByText": [Function],
-  "findByTitle": [Function],
-  "getAllByAltText": [Function],
-  "getAllByDisplayValue": [Function],
-  "getAllByLabelText": [Function],
-  "getAllByPlaceholderText": [Function],
-  "getAllByRole": [Function],
-  "getAllByTestId": [Function],
-  "getAllByText": [Function],
-  "getAllByTitle": [Function],
-  "getByAltText": [Function],
-  "getByDisplayValue": [Function],
-  "getByLabelText": [Function],
-  "getByPlaceholderText": [Function],
-  "getByRole": [Function],
-  "getByTestId": [Function],
-  "getByText": [Function],
-  "getByTitle": [Function],
-  "queryAllByAltText": [Function],
-  "queryAllByDisplayValue": [Function],
-  "queryAllByLabelText": [Function],
-  "queryAllByPlaceholderText": [Function],
-  "queryAllByRole": [Function],
-  "queryAllByTestId": [Function],
-  "queryAllByText": [Function],
-  "queryAllByTitle": [Function],
-  "queryByAltText": [Function],
-  "queryByDisplayValue": [Function],
-  "queryByLabelText": [Function],
-  "queryByPlaceholderText": [Function],
-  "queryByRole": [Function],
-  "queryByTestId": [Function],
-  "queryByText": [Function],
-  "queryByTitle": [Function],
-  "rerender": [Function],
-  "unmount": [Function],
-}
-`;
-
-exports[`test Avatar component should correct loading 1`] = `
-Object {
-  "asFragment": [Function],
-  "baseElement": <body>
-    <div>
-      <div
-        class="sc-AxiKw gcoPtg"
-        data-testid="avatar-div"
-      >
-        <svg
-          class="sc-AxjAm koTgXG"
-          color="black"
-          data-testid="icon-svg"
-          height="20px"
-          viewBox="0 0 1024 1024"
-          width="20px"
-        >
-          <path
-            class="sc-AxirZ lnImqt"
-            color="black"
-            d="M533 960a850 850 0 0 0 386-92v-19c0-117-242-223-306-234-20-3-21-58-21-58s59-58 72-137c35 0 56-84 21-113 2-31 45-243-173-243S337 276 338 307c-34 29-13 113 22 113 13 79 72 137 72 137s-1 55-21 58c-64 11-301 115-306 231a855 855 0 0 0 428 114z"
-            data-testid="icon-path"
+          <input
+            aria-invalid="false"
+            class="sc-AxhUy ahlEp"
+            role="radio"
+            type="radio"
           />
-        </svg>
+          <span>
+            <span
+              class="sc-AxirZ bvOtTg"
+            >
+              test
+            </span>
+          </span>
+        </label>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-AxiKw gcoPtg"
-      data-testid="avatar-div"
+      class="sc-AxhCb eXdbPg"
     >
-      <svg
-        class="sc-AxjAm koTgXG"
-        color="black"
-        data-testid="icon-svg"
-        height="20px"
-        viewBox="0 0 1024 1024"
-        width="20px"
+      <label
+        class="sc-AxjAm gqYqNm"
       >
-        <path
-          class="sc-AxirZ lnImqt"
-          color="black"
-          d="M533 960a850 850 0 0 0 386-92v-19c0-117-242-223-306-234-20-3-21-58-21-58s59-58 72-137c35 0 56-84 21-113 2-31 45-243-173-243S337 276 338 307c-34 29-13 113 22 113 13 79 72 137 72 137s-1 55-21 58c-64 11-301 115-306 231a855 855 0 0 0 428 114z"
-          data-testid="icon-path"
+        <input
+          aria-invalid="false"
+          class="sc-AxhUy ahlEp"
+          role="radio"
+          type="radio"
         />
-      </svg>
+        <span>
+          <span
+            class="sc-AxirZ bvOtTg"
+          >
+            test
+          </span>
+        </span>
+      </label>
     </div>
   </div>,
   "debug": [Function],
@@ -277,36 +105,288 @@ Object {
 }
 `;
 
-exports[`test Avatar component should render correct username 1`] = `
+exports[`test Radio component should disabled 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="sc-AxiKw dIhqXp"
-        data-testid="avatar-div"
+        class="sc-AxhCb eXdbPg"
       >
-        <div
-          aria-hidden="true"
-          class="sc-AxhCb jWsrSR"
-          data-testid="avatar-username"
+        <label
+          class="sc-AxjAm kglpYH"
+          disabled=""
         >
-          y
+          <input
+            aria-invalid="false"
+            class="sc-AxhUy ahlEp"
+            disabled=""
+            role="radio"
+            type="radio"
+          />
+          <span>
+            <span
+              class="sc-AxirZ bvOtTg"
+            >
+              test
+            </span>
+          </span>
+        </label>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="sc-AxhCb eXdbPg"
+    >
+      <label
+        class="sc-AxjAm kglpYH"
+        disabled=""
+      >
+        <input
+          aria-invalid="false"
+          class="sc-AxhUy ahlEp"
+          disabled=""
+          role="radio"
+          type="radio"
+        />
+        <span>
+          <span
+            class="sc-AxirZ bvOtTg"
+          >
+            test
+          </span>
+        </span>
+      </label>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`test Radio component should hide label 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="sc-AxhCb eXdbPg"
+      >
+        <label
+          class="sc-AxjAm gqYqNm"
+        >
+          <input
+            aria-invalid="false"
+            class="sc-AxhUy ahlEp"
+            role="radio"
+            type="radio"
+          />
+          <span>
+            <span
+              class="sc-AxirZ eaVIgo"
+            >
+              test
+            </span>
+          </span>
+        </label>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="sc-AxhCb eXdbPg"
+    >
+      <label
+        class="sc-AxjAm gqYqNm"
+      >
+        <input
+          aria-invalid="false"
+          class="sc-AxhUy ahlEp"
+          role="radio"
+          type="radio"
+        />
+        <span>
+          <span
+            class="sc-AxirZ eaVIgo"
+          >
+            test
+          </span>
+        </span>
+      </label>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`test Radio component should render extra text 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="sc-AxhCb eXdbPg"
+      >
+        <label
+          class="sc-AxjAm gqYqNm"
+        >
+          <input
+            aria-invalid="true"
+            class="sc-AxhUy ahlEp"
+            role="radio"
+            type="radio"
+          />
+          <span>
+            <span
+              class="sc-AxirZ bvOtTg"
+            >
+              test
+            </span>
+          </span>
+        </label>
+        <span
+          class="sc-AxgMl hhqDpU"
+        >
+          errortext
+        </span>
+        <div
+          class="sc-AxiKw dIfAVO"
+        >
+          description
         </div>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-AxiKw dIhqXp"
-      data-testid="avatar-div"
+      class="sc-AxhCb eXdbPg"
     >
-      <div
-        aria-hidden="true"
-        class="sc-AxhCb jWsrSR"
-        data-testid="avatar-username"
+      <label
+        class="sc-AxjAm gqYqNm"
       >
-        y
+        <input
+          aria-invalid="true"
+          class="sc-AxhUy ahlEp"
+          role="radio"
+          type="radio"
+        />
+        <span>
+          <span
+            class="sc-AxirZ bvOtTg"
+          >
+            test
+          </span>
+        </span>
+      </label>
+      <span
+        class="sc-AxgMl hhqDpU"
+      >
+        errortext
+      </span>
+      <div
+        class="sc-AxiKw dIfAVO"
+      >
+        description
       </div>
     </div>
   </div>,

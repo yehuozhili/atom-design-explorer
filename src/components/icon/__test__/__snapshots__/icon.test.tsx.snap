@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <svg
-        class="sc-AxjAm SsKcr"
+        class="sc-AxjAm doopJe"
         color="black"
         data-testid="icon-svg"
         height="20px"
@@ -24,7 +24,7 @@ Object {
   </body>,
   "container": <div>
     <svg
-      class="sc-AxjAm SsKcr"
+      class="sc-AxjAm doopJe"
       color="black"
       data-testid="icon-svg"
       height="20px"
@@ -99,7 +99,7 @@ Object {
   "baseElement": <body>
     <div>
       <svg
-        class="sc-AxjAm jXBUmn"
+        class="sc-AxjAm koTgXG"
         color="blue"
         data-testid="icon-svg"
         height="20px"
@@ -117,7 +117,7 @@ Object {
   </body>,
   "container": <div>
     <svg
-      class="sc-AxjAm jXBUmn"
+      class="sc-AxjAm koTgXG"
       color="blue"
       data-testid="icon-svg"
       height="20px"
