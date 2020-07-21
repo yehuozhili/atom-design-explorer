@@ -83,7 +83,8 @@ export const withIcon = () => (
 function ParentControl() {
 	const [state, setState] = useState(() => new Array(5).fill(false));
 	const onClick = (e: React.MouseEvent<HTMLInputElement, MouseEvent>) => {
-		const index = e.target.value;
+		const target = e.target as HTMLInputElement;
+		const index = (target.value as unknown) as number;
 		let newArr = new Array(5).fill(false);
 		newArr[index] = true;
 		setState(newArr);
