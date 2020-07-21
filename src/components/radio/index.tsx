@@ -134,12 +134,13 @@ export function Radio(props: RadioProps) {
 		description,
 		label,
 		hideLabel,
+		style,
 		...restProps
 	} = props;
 	const { disabled } = props;
 
 	return (
-		<RadioWrapper className={wrapperClass}>
+		<RadioWrapper className={wrapperClass} style={style}>
 			<Label disabled={disabled}>
 				<Input
 					{...restProps}
