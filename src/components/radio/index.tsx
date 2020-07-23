@@ -69,10 +69,6 @@ const Input = styled.input<RadioProps>`
 		box-shadow: ${color.mediumdark} 0 0 0 1px inset;
 	}
 
-	&:focus + span:before {
-		box-shadow: ${(props) => color[props.appearance!]} 0 0 0 1px inset;
-	}
-
 	&:checked + span:before {
 		box-shadow: ${(props) => color[props.appearance!]} 0 0 0 1px inset;
 	}
