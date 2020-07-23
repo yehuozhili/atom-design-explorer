@@ -105,13 +105,8 @@ function mapToState(
 			if (v === -1) {
 				return null;
 			} else {
-				try {
-					let child = children as ReactElement[];
-					return child[v];
-				} catch {
-					console.error("you should pass react element as children");
-					return null;
-				}
+				let child = children as ReactElement[];
+				return child[v];
 			}
 		});
 	}
@@ -197,6 +192,7 @@ export function Carousel(props: PropsWithChildren<CarouselProps>) {
 	}, [defaultIndex, children, totalLen]);
 	useEffect(() => {
 		let child = children as ReactElement[];
+		let timer: number;
 		if (child) {
 			let tmp = indexMap.map((v) => {
 				return v !== -1 ? child[v] : null;
@@ -214,7 +210,7 @@ export function Carousel(props: PropsWithChildren<CarouselProps>) {
 				sign = false;
 				setAnimation({ animatein: false, direction: "left" });
 			}
-			setTimeout(() => {
+			timer = window.setTimeout(() => {
 				if (sign) {
 					setAnimation({ animatein: true, direction: "right" });
 				} else {
@@ -222,6 +218,7 @@ export function Carousel(props: PropsWithChildren<CarouselProps>) {
 				}
 			}, delay!);
 		}
+		return () => window.clearTimeout(timer);
 	}, [delay, indexMap, children]);
 	const ref = useRef<HTMLDivElement>(null);
 	useEffect(() => {
@@ -308,6 +305,7 @@ export function Carousel(props: PropsWithChildren<CarouselProps>) {
 									height: `${height!}px`,
 									width: `${bound?.width}px`,
 								}}
+								aria-hidden={i === 1 ? false : true}
 							>
 								{v}
 							</div>
@@ -320,23 +318,25 @@ export function Carousel(props: PropsWithChildren<CarouselProps>) {
 					display: "flex",
 					justifyContent: "center",
 					alignItems: "center",
+					overflow: "hidden",
 				}}
 			>
 				{new Array(totalLen).fill(1).map((x, y) => {
 					return (
-						<Radio
-							label=""
-							appearance={radioAppear}
-							key={y}
-							hideLabel
-							value={0}
-							checked={y === indexMap[1]}
-							onChange={() => {}}
-							onClick={() => {
-								let newmap = currentSetMap(y, indexMap);
-								setIndexMap(newmap);
-							}}
-						/>
+						<li style={{ listStyle: "none" }} key={y}>
+							<Radio
+								label={`carousel ${y}`}
+								appearance={radioAppear}
+								hideLabel
+								value={0}
+								checked={y === indexMap[1]}
+								onChange={() => {}}
+								onClick={() => {
+									let newmap = currentSetMap(y, indexMap);
+									setIndexMap(newmap);
+								}}
+							/>
+						</li>
 					);
 				})}
 			</ul>
