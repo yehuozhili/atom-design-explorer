@@ -32,6 +32,7 @@ const BarMain = styled.div<BarMainProps>`
 		${(props) => props.primary},
 		${(props) => props.secondary}
 	);
+	position: relative;
 	transition: all 0.4s cubic-bezier(0.08, 0.82, 0.17, 1) 0s;
 	border-radius: 5px;
 	&::before {
