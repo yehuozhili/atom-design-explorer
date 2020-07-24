@@ -6,3 +6,4 @@ export * from "./components/icon/index";
 export * from "./components/avatar/index";
 export * from "./components/badge/index";
 export * from "./components/radio/index";
+export * from "./components/carousel/index";
