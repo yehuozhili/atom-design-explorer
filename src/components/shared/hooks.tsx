@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect, RefObject } from "react";
 
 export function useStopScroll(state: boolean, delay: number, open?: boolean) {
 	if (open) {
@@ -34,4 +34,50 @@ export function useStateAnimation(
 		return [innerclose, unmount];
 	}, [setState, parentSetState, delay]);
 	return [state, innerClose, unmount];
+}
+
+export function useDebounce<T>(value: T, delay = 300) {
+	const [debounceValue, setDebouncedValue] = useState(value);
+	useEffect(() => {
+		const handler = window.setTimeout(() => {
+			setDebouncedValue(value);
+		}, delay);
+		return () => {
+			window.clearTimeout(handler);
+		};
+	}, [value, delay]);
+	return debounceValue;
+}
+export function useThrottle<T>(value: T, delay = 300) {
+	const [throttleValue, setThrottledValue] = useState(value);
+	const flag = useMemo(() => {
+		return { s: true };
+	}, []);
+	useEffect(() => {
+		let handler: number;
+		if (flag.s) {
+			flag.s = false;
+			setThrottledValue(value);
+			handler = window.setTimeout(() => {
+				flag.s = true;
+			}, delay);
+		}
+		return () => {
+			window.clearTimeout(handler);
+		};
+		// eslint-disable-next-line react-hooks/exhaustive-deps
+	}, [value, delay]);
+	return throttleValue;
+}
+export function throttle(fn: Function, delay: number = 300) {
+	let flag = true;
+	return function(...args: any) {
+		if (flag) {
+			flag = false;
+			fn(...args);
+			setTimeout(() => {
+				flag = true;
+			}, delay);
+		}
+	};
 }
