@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect, RefObject } from "react";
+import { useState, useMemo, useEffect } from "react";
 
 export function useStopScroll(state: boolean, delay: number, open?: boolean) {
 	if (open) {

@@ -445,12 +445,12 @@ const TreeIcon = styled.span<{ g: itemPropsRequired }>`
 		${(props) => {
 			if (props.g.children && props.g.children.length !== 0) {
 				if (props.g.children[0] && props.g.children[0]["visible"]) {
-					return "display:inline-block;transform: rotate(180deg);";
+					return "display:inline-block;transform: rotate(-90deg);";
 				} else {
 					return "display:inline-block;";
 				}
 			} else {
-				return "display:none;";
+				return "opacity:0";
 			}
 		}};
 	}
