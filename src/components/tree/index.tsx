@@ -487,7 +487,7 @@ const TreeGrag = styled.div<TreeGragType>`
 `;
 
 export type TreeProps = {
-	/** 数据源*/
+	/** 数据源 不提供key可能产生bug*/
 	source: itemProps[];
 	/** 是否可以拖拽 */
 	drag?: boolean;
