@@ -36,7 +36,7 @@ const flatten = function(
 	return arr;
 };
 
-interface itemProps {
+export interface itemProps {
 	value: string;
 	level?: number;
 	expand?: boolean;
@@ -46,7 +46,7 @@ interface itemProps {
 	key?: string;
 }
 
-interface itemPropsRequired
+export interface itemPropsRequired
 	extends Omit<Required<itemProps>, "children" | "parent"> {
 	children?: itemPropsRequired[];
 	parent: itemPropsRequired;
@@ -143,7 +143,12 @@ const judgeChildren = function(
 const changeOriginParent = function(origin: itemPropsRequired) {
 	const parent = origin.parent;
 	if (parent.children) {
-		parent.children = parent.children.filter((v) => v !== origin);
+		const index = parent.children.indexOf(origin);
+		if (index > -1) {
+			parent.children.splice(index, 1);
+		}
+		//下面这个方法会产生bug
+		//parent.children = parent.children.filter((v) => v !== origin);
 	}
 };
 
@@ -510,17 +515,11 @@ export function Tree(props: TreeProps) {
 			expand: true,
 			children: source,
 			value: "root",
-			first: true,
 		};
 	}, [source]);
 	const [dragUpdate, setDragUpdate] = useState(0);
 	const data = useMemo(() => {
-		if (root.first) {
-			root.first = false;
-			return flatten(source, 1, root);
-		} else {
-			return flatten(root.children, 1, root);
-		}
+		return flatten(root.children, 1, root);
 		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [root, dragUpdate]);
 	const [start, setStart] = useState(0);
