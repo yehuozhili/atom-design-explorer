@@ -1,4 +1,4 @@
-import { useState, useMemo, useEffect } from "react";
+import { useState, useMemo, useEffect, RefObject } from "react";
 
 export function useStopScroll(state: boolean, delay: number, open?: boolean) {
 	if (open) {
@@ -80,4 +80,20 @@ export function throttle(fn: Function, delay: number = 300) {
 			}, delay);
 		}
 	};
+}
+
+export function useClickOutside(
+	ref: RefObject<HTMLElement>,
+	handler: Function
+) {
+	useEffect(() => {
+		const listener = (event: MouseEvent) => {
+			if (!ref.current || ref.current.contains(event.target as Node)) {
+				return;
+			}
+			handler(event);
+		};
+		window.addEventListener("click", listener);
+		return () => window.removeEventListener("click", listener);
+	}, [ref, handler]);
 }

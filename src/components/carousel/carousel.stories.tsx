@@ -18,6 +18,7 @@ export default {
 const DivExample = function(height: number, index: number) {
 	return (
 		<div
+			key={index}
 			style={{
 				background: "#364d79",
 			}}
