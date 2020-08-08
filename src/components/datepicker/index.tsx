@@ -1,21 +1,14 @@
 import React, {
-	PropsWithChildren,
-	ReactNode,
 	useMemo,
 	useState,
 	useRef,
-	useCallback,
 	useEffect,
 	CSSProperties,
 } from "react";
 import styled, { css } from "styled-components";
-import { color, typography } from "../shared/styles";
-import { darken, rgba, opacify } from "polished";
-import {
-	easing,
-	modalOpenAnimate,
-	modalCloseAnimate,
-} from "../shared/animation";
+import { color } from "../shared/styles";
+import { rgba } from "polished";
+import { modalOpenAnimate, modalCloseAnimate } from "../shared/animation";
 import { useClickOutside, useStateAnimation } from "../shared/hooks";
 import Button from "../button";
 import { Icon } from "../icon";
@@ -509,13 +502,13 @@ export function DatePicker(props: DatepickerProps) {
 			ref={ref}
 			style={style}
 			className={classname ? classname : ""}
+			onClick={handleClick}
 		>
 			<input
 				aria-label="date picker"
 				onBlur={handleBlur}
 				value={state}
 				onChange={handleChange}
-				onClick={handleClick}
 				style={{ border: "none", boxShadow: "none", outline: "none" }}
 			></input>
 			<CalendarIcon>
