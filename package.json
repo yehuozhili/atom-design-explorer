@@ -3,7 +3,7 @@
 	"version": "0.1.8",
 	"private": false,
 	"dependencies": {
-		"axios": "^0.19.2",
+		"axios": "^0.21.2",
 		"polished": "^3.6.5"
 	},
 	"peerDependencies": {
